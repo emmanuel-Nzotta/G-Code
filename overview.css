@@ -1,0 +1,117 @@
+:root{
+    --nav-bc: repeating-linear-gradient(90deg,#1409e5ec , #52d9f8);
+    --primary: #77e5fc;
+}
+
+body {
+    margin: 0;
+    background:  #52d9f8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background: var(--nav-bc);
+    height: 7.5vh;
+    margin-bottom: 0;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+nav ul{
+    list-style: none;
+    margin-left: 650px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+li a{
+    color: #000;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+li a:hover{
+    color: #fff;
+}
+
+i{
+    margin-left: 5px;
+    margin-top: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+i a{
+    text-decoration: none;
+    color: #000;
+}
+
+header{
+    height: 60vh;
+    background: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+header div{
+    position: absolute;
+    height: calc(60vh - 7.5vh);
+    width: 100%;
+}
+
+div h1, div p{
+    margin: 25px;
+    margin-left: 30px;
+    width: 48vw;
+    text-align: justify;
+    justify-content: space-evenly;
+}
+
+div h1{
+    margin-top: 100px;
+}
+
+.content{
+    margin: 25px;
+    padding: 15px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    text-align: justify;
+    justify-content: space-evenly;
+    background: var(--primary);
+}
+
+.content h1{
+    text-align: center;
+}
+.content table{
+    border-collapse: collapse;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+table th{
+    text-align: center;
+    border: 2px solid #000;
+}
+
+table td{
+    text-align: center;
+    font-size: small;
+    border: 1px solid #000;
+}
+footer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: purple;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    margin: auto;
+    text-align: center;
+    padding: 1px;
+}

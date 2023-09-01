@@ -1,0 +1,157 @@
+:root{
+  --nav-bc: repeating-linear-gradient(90deg,#1409e5ec , #52d9f8);
+  --primary: #77e5fc;
+}
+
+body {
+  margin: 0;
+  background:  #52d9f8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background: var(--nav-bc);
+    height: 7.5vh;
+    margin-bottom: 0;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+nav ul{
+    list-style: none;
+    margin-left: 650px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+}
+
+li a{
+    color: #000;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+li a:hover{
+    color: #fff;
+}
+
+i{
+    margin-left: 5px;
+    margin-top: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+i a{
+  text-decoration: none;
+  color: #000;
+}
+h1{
+    text-align: center;
+}
+
+/* vertical line */
+.History {
+    position: relative;
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+  
+  /* actual timeline  */
+  .History::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 1px;
+  }
+  
+
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 60%;
+  }
+  
+  /* red circles*/
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -15px;
+    background-color: white;
+    border: 6px solid crimson;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* left container  */
+  .left {
+    left: -10.4em;
+  }
+  
+  /*  right container */
+  .right {
+    left: 50%;
+  }
+  
+  /* left arrows  */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--primary);
+  }
+  
+  /* right arrows */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary) transparent transparent;
+  }
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: var(--primary);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+footer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: purple;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    text-align: center;
+    padding: 1px;
+}
